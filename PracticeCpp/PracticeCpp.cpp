@@ -112,6 +112,22 @@ void multiplyUserValueByTwo()
 
 }
 
+void printDouble(int value)
+{
+    std::cout << value << " double is: " << value * 2 << '\n';
+}
+
+void passByValue()
+{
+    int num{ getValueFromUser() };
+    printDouble(num);
+}
+
+void passByValueConcise()
+{
+    printDouble( getValueFromUser() );
+}
+
 void takeTwoNumbersFromUser()
 {
     int x{ getValueFromUser() };
@@ -127,6 +143,7 @@ void functionWithoutParenthesis()
     std::cout << getValueFromUser << '\n';
     std::cout << firstFunction << '\n';
 }
+
 
 int main()
 {
@@ -151,7 +168,10 @@ int main()
     //firstFunction();
     //multiplyUserValueByTwo();
     //takeTwoNumbersFromUser();
-    functionWithoutParenthesis();
+    //functionWithoutParenthesis();
+    //passByValue();
+    passByValueConcise();
+
 
     return EXIT_SUCCESS;
 }
