@@ -144,6 +144,20 @@ void functionWithoutParenthesis()
     std::cout << firstFunction << '\n';
 }
 
+//----------------------------------------------------
+// this function takes an integer and returns double of it
+int doubleNumber(int x)
+{
+    return 2 * x;
+}
+
+void printDoubleNumber()
+{
+    //std::cout << "enter the value: ";
+    int y{ getValueFromUser() };
+    //std::cin >> y;
+    std::cout << doubleNumber(y) << '\n';
+}
 
 int main()
 {
@@ -170,8 +184,8 @@ int main()
     //takeTwoNumbersFromUser();
     //functionWithoutParenthesis();
     //passByValue();
-    passByValueConcise();
-
+    //passByValueConcise();
+    printDoubleNumber();
 
     return EXIT_SUCCESS;
 }
